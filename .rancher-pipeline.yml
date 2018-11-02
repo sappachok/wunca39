@@ -5,6 +5,8 @@ stages:
       image: alpine
       shellScript: |-
         #git clone https://gitlab.com/thawat.v/startbootstrap-creative.git ./demo
+        ls -la 
+        cp -Rf 
 - name: Publish
   steps:
   - publishImageConfig:
