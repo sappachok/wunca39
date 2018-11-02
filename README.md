@@ -1,1 +1,1 @@
-# DevStarter CI/CD Sample it easey work ok 1234444
+# DevStarter CI/CD Sample
