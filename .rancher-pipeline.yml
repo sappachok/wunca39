@@ -2,10 +2,9 @@ stages:
 - name: Build
   steps:
   - runScriptConfig:
-      image: webdevops/php-nginx
+      image: alpine
       shellScript: |-
-        git clone https://gitlab.com/thawat.v/startbootstrap-creative.git ./demo
-        # push 23345
+        #git clone https://gitlab.com/thawat.v/startbootstrap-creative.git ./demo
 - name: Publish
   steps:
   - publishImageConfig:
