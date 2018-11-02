@@ -1,0 +1,30 @@
+stages:
+- name: Build
+  steps:
+  - runScriptConfig:
+      image: webdevops/php-nginx
+      shellScript: |-
+        git clone https://gitlab.com/thawat.v/startbootstrap-creative.git ./demo
+        # push 23345
+- name: Publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: example-devstarter:${CICD_EXECUTION_SEQUENCE}
+      registry: 127.0.0.1:34838
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
+    when:
+      branch:
+        include:
+        - master
+      event:
+        include:
+        - push
+timeout: 60
+branch:
+  include:
+  - master
