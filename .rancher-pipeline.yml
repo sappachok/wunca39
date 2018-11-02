@@ -3,8 +3,7 @@ stages:
   steps:
   - runScriptConfig:
       image: alpine
-      shellScript: '#git clone https://gitlab.com/thawat.v/startbootstrap-creative.git
-        ./demo'
+      shellScript: 
 - name: Publish
   steps:
   - publishImageConfig:
