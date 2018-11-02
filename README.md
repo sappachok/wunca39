@@ -1,2 +1,1 @@
-# DevStarter CI/CD Samplefdfdfd
-# fgdfg
+# DevStarter CI/CD It easey!
