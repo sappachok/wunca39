@@ -1,1 +1,1 @@
-# DevStarter CI/CD Sample it easey work
+# DevStarter CI/CD Sample it easey work ok
