@@ -3,8 +3,8 @@ stages:
   steps:
   - runScriptConfig:
       image: alpine
-      shellScript: |-
-        #git clone https://gitlab.com/thawat.v/startbootstrap-creative.git ./demo
+      shellScript: '#git clone https://gitlab.com/thawat.v/startbootstrap-creative.git
+        ./demo'
 - name: Publish
   steps:
   - publishImageConfig:
@@ -17,12 +17,8 @@ stages:
   - applyYamlConfig:
       path: ./deployment.yaml
     when:
-      branch:
-        include:
-        - master
-      event:
-        include:
-        - push
+      branch: {}
+      event: {}
 timeout: 60
 branch:
   include:
