@@ -1,1 +1,1 @@
-# DevStarter CI/CD Sample ddgdgdfgfhgfh
+# DevStarter CI/CD Sample
