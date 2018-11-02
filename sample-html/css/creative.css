@@ -244,6 +244,10 @@ header.masthead p {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+.portfolio-box img{
+
+  height: 400px;
+}
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
   position: absolute;
