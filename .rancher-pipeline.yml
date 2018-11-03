@@ -9,7 +9,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: example-devstarter-{CICD_PIPELINE_ID}:${CICD_EXECUTION_SEQUENCE}
+      tag: example-devstarter-${CICD_PIPELINE_ID}:${CICD_EXECUTION_SEQUENCE}
       registry: 127.0.0.1:34838
 - name: Deploy
   steps:
