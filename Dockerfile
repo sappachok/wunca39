@@ -1,4 +1,4 @@
-# pull linux base official image
+# pull linux base image
 FROM webdevops/nginx
 # run setup ubuntu package
 #RUN apt-get update && apt-get upgrade
