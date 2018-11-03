@@ -39,7 +39,7 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: pipeline-${CICD_EXECUTION_SEQUENCE}
+  name: wunca38-${CICD_EXECUTION_SEQUENCE}
 #  namespace: pipeline-${CICD_EXECUTION_SEQUENCE}
 spec:
   rules:
