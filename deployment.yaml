@@ -48,4 +48,4 @@ spec:
       paths:
       - backend:
           serviceName: example-devstarter
-servicePort: 80
+          servicePort: 80
