@@ -34,3 +34,18 @@ spec:
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
         ports:
         - containerPort: 80
+# Ingress example
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: pipeline-${CICD_EXECUTION_SEQUENCE}
+#  namespace: pipeline-${CICD_EXECUTION_SEQUENCE}
+spec:
+  rules:
+  - host: wunca38-${CICD_EXECUTION_SEQUENCE}.192.168.43.154.xip.io
+    http:
+      paths:
+      - backend:
+          serviceName: example-devstarter
+servicePort: 80
