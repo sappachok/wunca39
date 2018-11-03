@@ -40,7 +40,6 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: wunca38
-#  namespace: pipeline-${CICD_EXECUTION_SEQUENCE}
 spec:
   rules:
   - host: wunca38.192.168.43.154.xip.io
