@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: devstarter-service
+  name: example-devstarter
 spec:
   selector:
     app: devstarter
@@ -47,5 +47,5 @@ spec:
     http:
       paths:
       - backend:
-          serviceName: devstarter-service
+          serviceName: example-devstarter
           servicePort: 80
