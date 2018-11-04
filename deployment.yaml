@@ -42,7 +42,7 @@ metadata:
   name: wunca38
 spec:
   rules:
-  - host: wunca38.192.168.43.154.xip.io
+  - host: wunca38.192.168.43.163.xip.io
     http:
       paths:
       - backend:
