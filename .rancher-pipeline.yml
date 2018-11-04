@@ -9,8 +9,10 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: devstarter:${CICD_PIPELINE_ID}-${CICD_EXECUTION_SEQUENCE}
-      registry: 127.0.0.1:34838
+      tag: vthawat/devstart:${CICD_PIPELINE_ID}-${CICD_EXECUTION_SEQUENCE}
+#      registry: 127.0.0.1:34838
+      pushRemote: true
+      registry: index.docker.io
 - name: Deploy
   steps:
   - applyYamlConfig:
