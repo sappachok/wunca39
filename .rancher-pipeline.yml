@@ -10,7 +10,9 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: vthawat/devstart:${CICD_PIPELINE_ID}-${CICD_EXECUTION_SEQUENCE}
+## internal registry
 #      registry: 127.0.0.1:34838
+## external registry
       pushRemote: true
       registry: index.docker.io
 - name: Deploy
