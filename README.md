@@ -1,1 +1,1 @@
-# DevStarter CI/CD It easey!
+# DevStarter the CI/CD it easey!
