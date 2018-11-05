@@ -2,7 +2,7 @@
 FROM nginx
 # run install package
 #RUN apt-get update && apt-get upgrade
-COPY /sample-html /usr/local/nginx/html
+COPY /sample-html /usr/share/nginx/html
 ## set environment variable
 #ENV WEB_DOCUMENT_INDEX=index.html
 ## container expose port
