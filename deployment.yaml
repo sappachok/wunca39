@@ -35,16 +35,16 @@ spec:
         ports:
         - containerPort: 80
 ## Ingress example
----
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: wunca38
-spec:
-  rules:
-  - host: wunca38.172.31.133.148.nip.io
-    http:
-      paths:
-      - backend:
-          serviceName: devstarter-service
-          servicePort: 80
+#---
+#apiVersion: extensions/v1beta1
+#kind: Ingress
+#metadata:
+#  name: wunca38
+#spec:
+#  rules:
+#  - host: wunca38.172.31.133.148.nip.io
+#    http:
+#      paths:
+#      - backend:
+#          serviceName: devstarter-service
+#          servicePort: 80
