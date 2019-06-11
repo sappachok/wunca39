@@ -9,7 +9,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: devstart:${CICD_PIPELINE_ID}-${CICD_EXECUTION_SEQUENCE}
+      tag: devstart:v.${CICD_EXECUTION_SEQUENCE}
 ## internal registry
       registry: 127.0.0.1:34838
 ## external registry
