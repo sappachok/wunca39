@@ -11,7 +11,7 @@ stages:
       buildContext: .
       tag: devstart:v.${CICD_EXECUTION_SEQUENCE}
 ## internal registry
-      registry: 127.0.0.1:34838
+      registry: 127.0.0.1:34292
 ## external registry
 #      pushRemote: true
 #      registry: index.docker.io
