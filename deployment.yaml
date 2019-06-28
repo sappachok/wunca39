@@ -46,5 +46,5 @@ spec:
     http:
       paths:
       - backend:
-        serviceName: devstarter-service
-        servicePort: 80
+         serviceName: devstarter-service
+         servicePort: 80
